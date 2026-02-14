@@ -22,6 +22,9 @@
 from os import system, name
 system('cls') if (name == 'nt') else system('clear')
 
+
+print(' CALCULADORA DE IMC '.center(200,"*"))
+print('='.center(200,"="))
 print('Olá usuário'.center(200," "))
 print()
 print('Nesta aplicação calcularemos o IMC a partir do peso e da altura'.center(200," "))
@@ -30,8 +33,8 @@ print()
 #peso = float(input('Informe o peso.: ') if ('peso' in globals()) else 0)
 #altura = float(input('Agora informe a altura.: ') if ('altura' in globals()) else 0)
 
-peso = float(input('Informe o peso.: '))
-altura = float(input('Agora informe a altura.: '))
+peso = float(input('Informe o peso em Kg.: '))
+altura = float(input('Agora informe a altura em metros (9,99).: '))
 
 print()
 print('R E S U L T A D O'.center(200,"="))

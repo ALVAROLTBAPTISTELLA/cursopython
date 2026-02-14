@@ -32,16 +32,17 @@ print()
 if (menu == '1'):
     unidade = 'Polegada'
     resConversao = medidaCm/2.54
-    print('')
+#    print('')
 elif (menu == '2'):
         unidade = 'Pé'
         resConversao = medidaCm/30.48
-        print('')
+#        print('')
 elif (menu == '3'):
         unidade = 'Jarda'
         resConversao = medidaCm/91.44
 else:
-       print('')
+       resConversao = 0
+#       print('')
 #    unidade = 'I N V Á L I D A..!!!'
 #    resConversao = 0
 #print()
@@ -49,4 +50,5 @@ else:
        #unidade = ''
 #print('Opção I N V Á L I D A . . . ! ! !'.center(100," ") if (unidade=='') else f'{medidaCm} em {unidade} corresponde à: {resConversao:.4f}'.center(100," "))
        
-print(f'{medidaCm}cm em {unidade} corresponde à: {resConversao:.4f}'.center(100," ") if ('unidade' in globals()) else 'Opção I N V Á L I D A . . . ! ! !')
+print('')       
+print(f'{medidaCm}cm em {unidade} corresponde à: {resConversao:.4f}'.center(100," ") if ('unidade' in globals()) else 'Opção I N V Á L I D A . . . ! ! !'.center(100," "))
