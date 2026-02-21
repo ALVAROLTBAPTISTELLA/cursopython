@@ -37,27 +37,28 @@ peso = float(input('Informe o peso em Kg.: '))
 altura = float(input('Agora informe a altura em metros (9,99).: '))
 
 print()
-print('R E S U L T A D O'.center(200,"="))
+print(' R E S U L T A D O '.center(200,"="))
 print()
 #imc = peso / (altura*altura)
 imc = peso / (altura**2) if ('peso' in globals()) else 0
-if (imc < 18.5):
+if (imc <= 18.5):
     msg = 'BAIXO PESO'
-elif (imc >18.5 and imc <24.5):
+elif (imc >18.5 and imc <24.5): #(imc < 25)
     msg = 'PESO ADEQUADO - eutrofia'
-elif (imc >= 25 and imc < 29.9):
+elif (imc >= 25 and imc < 29.9): #(imc < 30)
     msg = 'SOBREPESO'
-elif (imc > 30 and imc < 34.9):
+elif (imc > 30 and imc < 34.9): #(imc < 35)
     msg  = 'OBESIDADE GRAU 1'
-elif (imc >35 and imc < 39.9):
+elif (imc >35 and imc < 39.9): #(imc < 40)
     msg = 'OBESIDADE GRRAU 2'
 elif (imc > 40):
     msg = 'OBESIDADE EXTREMA'
 else:
+#    msg = 'OBESIDADE EXTREMA'
     peso = 0
     altura = 0
     print()
 
-print(f'O IMC calculado foi de {imc:.4f}kg/a2, resultando em {msg}'.center(200," ") if ('imc' in globals()) else 'NÃO FORAM INFORMADOS PARÂMETROS..!!!'.center(200," "))
+print(f'O IMC calculado foi de {imc:.2f}kg/a2, resultando em {msg}'.center(200," ") if ('imc' in globals()) else 'NÃO FORAM INFORMADOS PARÂMETROS..!!!'.center(200," "))
 
 

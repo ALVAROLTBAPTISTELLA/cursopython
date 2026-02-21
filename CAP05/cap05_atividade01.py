@@ -41,6 +41,7 @@ dezenas = ('dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'de
 rasos = ('', '', 'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa', ) # as duas primeiras posições equivalem à unidades e à dezenas
 
 print(' TRANFORMAR NÚMERO POR EXTENSO '.center(200,"="))
+print('')
 numero = int(input("Informe um número entre 0 e 99 para ser convertido em texto: "))
 print('')
 
@@ -63,6 +64,7 @@ else:
 maiuscula = numTexto.upper()
 print("*".center(200,"*"))
 print('')
+#print(maiuscula.center(200," "))
 print(maiuscula.center(200," "))
 print('')
 print("*".center(200,"*"))

@@ -40,7 +40,7 @@ print('9. Quebra as palavras a cada espaço em branco.: ', listaPalavras)
 
 # método para centralizar o texto em 80 colunas
 
-print('10. Centraliza o nome entre *')
+print('10. Centraliza o nome entre uma quantidade de caracteres <*>')
 print(nomeCompleto.center(100,"*"))
 
 

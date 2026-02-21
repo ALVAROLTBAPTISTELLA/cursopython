@@ -37,13 +37,14 @@ while opcao.upper()=='S':
     eM = "Deu empate, só peerdeu tempo /:"
     cpuM = "Deu RED. A CPU venceu :("
 
-    resultado = (
-                (eM, jM, cpuM),
-                (cpuM, eM, jM),
-                (jM, cpuM, eM),
+    resultado = (                   #   0     1    2
+                (eM, jM, cpuM),     # 0 eM   jM   cpuM
+                (cpuM, eM, jM),     # 1 cpuM eM   jM
+                (jM, cpuM, eM),     # 2 jM   cpuM eM
                 )
     
     print(f'Você escolheu...: {(jogador)+1} - {opcoes[jogador]}')
+
     print(f'A CPU escolheu..: {(cpu)+1} - {opcoes[cpu]}')
     print('')
     print(resultado[cpu][jogador])
